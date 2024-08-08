@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MainMenu"
+        tools:targetApi="31">
+        <activity
+            android:name="admin_edit.AddcupcakeActivity"
+            android:exported="false" />
+        <activity
+            android:name="admin_edit.AddcategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="user.ReceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name="user.bill_activity"
+            android:exported="false" />
+        <activity
+            android:name="user.user_main"
+            android:exported="false" />
+        <activity
+            android:name="admin_edit.admin_menu"
+            android:exported="false" />
+        <activity
+            android:name="admin_edit.delete"
+            android:exported="false" />
+        <activity
+            android:name=".Description"
+            android:exported="false" />
+        <activity
+            android:name=".iteamList"
+            android:exported="false" />
+        <activity
+            android:name="user.Register"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".home_page"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="user.User"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/buy_product_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Product"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/cupcake_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_product_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/vanilla_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cupcake_spinner"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/vanilla_minus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cupcake_spinner"
+        android:layout_toLeftOf="@id/vanilla_quantity"
+        android:text="-" />
+
+    <!-- Checkboxes for cupcake types -->
+
+    <Button
+        android:id="@+id/vanilla_plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cupcake_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="410dp"
+        android:layout_toRightOf="@id/vanilla_quantity"
+        android:text="+" />
+
+    <CheckBox
+        android:id="@+id/vanilla_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vanilla (Rs.80)"
+        android:checked="false"
+        android:layout_below="@id/vanilla_quantity"
+        android:layout_marginTop="24dp"/>
+
+    <CheckBox
+        android:id="@+id/chocolate_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate (Rs.180)"
+        android:checked="false"
+        android:layout_below="@id/vanilla_checkbox"/>
+
+    <CheckBox
+        android:id="@+id/strawberry_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strawberry (Rs.150)"
+        android:checked="false"
+        android:layout_below="@id/chocolate_checkbox"/>
+
+    <CheckBox
+        android:id="@+id/another_checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="caramel (Rs.100)"
+        android:checked="false"
+        android:layout_below="@id/strawberry_checkbox"
+        android:layout_marginTop="2dp"/>
+
+    <CheckBox
+        android:id="@+id/another_checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oreo (Rs.120)"
+        android:checked="false"
+        android:layout_below="@id/another_checkbox1"
+        android:layout_marginTop="2dp"/>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/another_checkbox2"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="133dp"
+        android:text="Calculate Total" />
+
+    <Button
+        android:id="@+id/decrease_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-48dp"
+        android:layout_marginEnd="29dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate_button"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="-119dp"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/total_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decrease_button"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Total: Rs0"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginBottom="52dp"
+        android:text="confirm" />
+
+</RelativeLayout>
